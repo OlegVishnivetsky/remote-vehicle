@@ -26,7 +26,7 @@ namespace _Project._Code.Features.MapLoader.View
 
         private void SpawnButtons()
         {
-            for (int i = 1; i < (int)MapTypeId.Count; i++)
+            for (int i = 1; i < Enum.GetValues(typeof(MapTypeId)).Length; i++)
             {
                 MapLoaderButton button = Instantiate(_loaderButtonPrefab, _loaderButtonsContainer);
                 button.Construct((MapTypeId)i);

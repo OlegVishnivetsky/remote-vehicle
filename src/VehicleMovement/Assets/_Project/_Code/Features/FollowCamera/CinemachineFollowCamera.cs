@@ -1,7 +1,5 @@
-using System;
 using Unity.Cinemachine;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace _Project._Code.Features.FollowCamera
 {
@@ -15,13 +13,7 @@ namespace _Project._Code.Features.FollowCamera
             _cinemachineCamera = GetComponent<CinemachineCamera>();
             _inputAxisController = GetComponent<CinemachineInputAxisController>();
         }
-
-        // private void Update()
-        // {
-        //     bool pointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
-        //     _inputAxisController.enabled = !pointerOverUI;
-        // }
-
+        
         public void SetTarget(Transform target)
         {
             _cinemachineCamera.Follow = target;

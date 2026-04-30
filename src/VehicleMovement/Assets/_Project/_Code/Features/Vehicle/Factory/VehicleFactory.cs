@@ -7,7 +7,6 @@ using _Project._Code.Services.StaticData;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Zenject;
-using ZLinq;
 
 namespace _Project._Code.Features.Vehicle.Factory
 {

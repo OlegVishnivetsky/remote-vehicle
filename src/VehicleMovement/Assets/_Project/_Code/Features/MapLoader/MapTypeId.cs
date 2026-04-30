@@ -6,6 +6,5 @@
         Prototype = 1,
         Obstacles = 2,
         Terrain = 3,
-        Count = 4
     }
 }
